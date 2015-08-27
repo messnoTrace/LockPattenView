@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   
+    
+ <declare-styleable name="LockPatternView">
+
+        <!--
+             Aspect to use when drawing LockPatternView. Choices are "square"(default), "lock_width"
+             or "lock_height"
+        -->
+        <attr name="aspect" format="string" />
+        <attr name="borderWidth" format="dimension" />
+        <attr name="centerRadius" format="dimension" />
+        <attr name="pathPaintWidth" format="dimension" />
+        <attr name="circleRadius" format="dimension" />
+    </declare-styleable>
+        
+      <!-- 自定义圆形图片参数 -->
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+        <attr name="border_start" format="color" />
+        <attr name="border_end" format="color" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/lock_background"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/lock_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="35dp"
+        android:paddingBottom="35dp"
+        android:text="绘制解锁图案"
+        android:textColor="@color/lock_username"
+        android:textSize="15sp" />
+
+    <com.notrace.lock.LockPatternView
+        android:id="@+id/lock_pattern"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="25dp"
+        app:borderWidth="1dp"
+                app:centerRadius="10dp"
+                app:circleRadius="60dp"
+                app:pathPaintWidth="1dp"
+        android:layout_marginLeft="25dp" />
+
+
+</LinearLayout>
